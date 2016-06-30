@@ -6,10 +6,10 @@
 -- To change this template use File | Settings | File Templates.
 --
 
-local array = require("library.array")
+local array = require("DB.helper.array")
 local pairs = pairs
-local string = require("library.string")
-local class = require("library.class")
+local string = require("DB.helper.string")
+local class = require("DB.helper.class")
 local cjson = require("cjson")
 local BaseGrammar = class.create('BaseGrammar')
 --BaseGrammar.__index = BaseGrammar

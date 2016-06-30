@@ -5,8 +5,8 @@
 -- Time: 上午11:57
 -- To change this template use File | Settings | File Templates.
 --
-local string = require("library.string")
-local class = require("library.class")
+local string = require("DB.helper.string")
+local class = require("DB.helper.class")
 local cjson = require("cjson")
 local Processor = class.create('Processor')
 

@@ -7,7 +7,8 @@
 --
 --
 
-local array = require("library.array")
+local array = require("DB.helper.array")
+--local array = require("library.array")
 local MysqlConnector = require("DB.connectors.MysqlConnector")
 local MysqlConnection = require("DB.MysqlConnection")
 local cjson = require("cjson")

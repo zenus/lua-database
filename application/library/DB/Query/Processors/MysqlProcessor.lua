@@ -7,8 +7,8 @@
 --
 
 --local string = require("application.library.string")
-local array = require("library.array")
-local class = require("library.class")
+local array = require("DB.helper.array")
+local class = require("DB.helper.class")
 local tonumber = tonumber
 local cjson = require("cjson")
 local Processor = require("DB.Query.Processors.Processor")

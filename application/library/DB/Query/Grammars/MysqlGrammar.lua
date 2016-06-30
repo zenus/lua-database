@@ -7,8 +7,8 @@
 --
 
 local Grammar = require("DB.Query.Grammars.Grammar")
-local array = require("library.array")
-local class = require("library.class")
+local array = require("DB.helper.array")
+local class = require("DB.helper.class")
 local pairs = pairs
 
 

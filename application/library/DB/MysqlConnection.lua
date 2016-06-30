@@ -11,7 +11,7 @@ local MysqlBuilder = require("DB.Schema.MysqlBuilder")
 local QueryGrammar = require("DB.Query.Grammars.MysqlGrammar")
 local SchemaGrammar = require("DB.Schema.Grammars.MysqlGrammar")
 local MysqlProcessor = require("DB.Query.Processors.MysqlProcessor")
-local class = require("library.class")
+local class = require("DB.helper.class")
 
 local MysqlConnection = class.create("MysqlConnection",Connection)
 

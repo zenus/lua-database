@@ -5,7 +5,7 @@
 -- Time: 上午9:29
 -- To change this template use File | Settings | File Templates.
 --
-local class = require("library.class")
+local class = require("DB.helper.class")
 local cjson = require("cjson")
 local JoinClause = class.create('JoinClause')
 

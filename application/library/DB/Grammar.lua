@@ -5,9 +5,9 @@
 -- Time: 上午7:20
 -- To change this template use File | Settings | File Templates.
 --
-local array = require("application.library.array")
+local array = require("DB.hepler.array")
 local Expression = require("DB.Query.Expression")
-local string = require("application.library.string")
+local string = require("DB.helper.string")
 local pairs = pairs
 local Grammar = {}
 Grammar.__index = Grammar

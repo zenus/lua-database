@@ -5,8 +5,11 @@
 -- Time: 下午5:07
 -- To change this template use File | Settings | File Templates.
 --
-local array = require("library.array")
-local class = require("library.class")
+--local array = require("library.array")
+--local class = require("library.class")
+
+local array = require("DB.helper.array")
+local class = require("DB.hepler.class")
 
 local Connector = class.create('Connector')
 

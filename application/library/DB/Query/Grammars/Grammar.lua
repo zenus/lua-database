@@ -7,10 +7,10 @@
 --
 local BaseGrammar = require("DB.Query.Grammars.BaseGrammar")
 local cjson = require("cjson")
-local array = require("library.array")
+local array = require("DB.helper.array")
 --local tostring = tostring
-local string = require("library.string")
-local class = require("library.class")
+local string = require("DB.helper.string")
+local class = require("DB.helper.class")
 local pairs = pairs
 local type = type
 local rawget = rawget

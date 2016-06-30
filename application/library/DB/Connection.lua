@@ -10,8 +10,8 @@ local Grammar = require("DB.Query.Grammars.Grammar")
 local Builder = require("DB.Schema.Builder")
 local QueryBuilder = require("DB.Query.QueryBuilder")
 local Expression = require("DB.Query.Expression")
-local class = require("library.class")
-local array = require("library.array")
+local class = require("DB.helper.class")
+local array = require("DB.helper.array")
 local cjson = require("cjson")
 
 local error = error

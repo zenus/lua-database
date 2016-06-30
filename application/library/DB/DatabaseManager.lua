@@ -7,6 +7,7 @@
 --
 
 local app = require("config.application")
+local ConnectionFactory = require("DB.connectors.ConnectionFactory")
 local cjson = require("cjson")
 local pcall = pcall
 local error = error
@@ -218,7 +219,7 @@ end
 
 
 
-function DataManager.new(ConnectionFactory)
+function DataManager.new()
     local old_index = DataManager.__index
     DataManager.__index = function (tb, key)
         local f = DataManager:connection()[key]
@@ -228,7 +229,7 @@ function DataManager.new(ConnectionFactory)
         end
         return old_index[key]
     end
-    DataManager.factory = ConnectionFactory
+    DataManager.factory = ConnectionFactory.new()
     local self = setmetatable({}, DataManager)
     return self
 end

@@ -6,9 +6,9 @@
 -- To change this template use File | Settings | File Templates.
 --
 
-local array = require("library.array")
-local class = require("library.class")
-local string = require("library.string")
+local array = require("DB.helper.array")
+local class = require("DB.helper.class")
+local string = require("DB.helper.string")
 local pcall = pcall
 
 local Expression = class.create("Expression", nil)

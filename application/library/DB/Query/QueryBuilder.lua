@@ -7,9 +7,9 @@
 --
 
 
-local array = require("library.array")
-local class = require("library.class")
-local Collection = require("library.Collection")
+local array = require("DB.helper.array")
+local class = require("DB.helper.class")
+local Collection = require("DB.helper.Collection")
 local Expression = require("DB.Query.Expression")
 local JoinClause = require("DB.Query.JoinClause")
 local cjson = require("cjson")
@@ -18,7 +18,7 @@ local pcall = pcall
 local type = type
 local max = math.max
 local pairs = pairs
-local string = require("library.string")
+local string = require("DB.helper.string")
 local pcall = pcall
 
 local QueryBuilder = class.create('QueryBuilder')
