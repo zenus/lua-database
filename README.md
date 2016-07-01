@@ -19,7 +19,7 @@ Retrieving All Rows From A Table
 To begin a fluent query, use the table method on the DB facade. The table method returns a fluent query builder instance for the given table, allowing you to chain more constraints onto the query and then finally get the results. In this example, let's just get all records from a table:
 
 ```lua
-local  users = DB:table('users')->get();
+local  users = DB:table('users'):get();
 ```
 Retrieving A Single Row / Column From A Table
 
@@ -72,24 +72,24 @@ Using Where Between
 
 ```lua
 local users = DB:table('users')
-                    :whereBetween('votes', array(1, 100)):get();
+                    :whereBetween('votes', {1, 100}):get();
 ```
 
 Using Where Not Between
 
 ```lua
 local users = DB:table('users')
-                    :whereNotBetween('votes', array(1, 100)):get();
+                    :whereNotBetween('votes', {1, 100}):get();
 ```
 
 Using Where In With An Array
 
 ```lua
 local users = DB:table('users')
-                    :whereIn('id', array(1, 2, 3)):get();
+                    :whereIn('id', {1, 2, 3}):get();
 
 local users = DB::table('users')
-                    :whereNotIn('id', array(1, 2, 3)):get();
+                    :whereNotIn('id', {1, 2, 3}):get();
 ```
 
 Using Where Null To Find Records With Unset Values
