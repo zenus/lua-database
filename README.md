@@ -10,16 +10,9 @@ First, create a new Database manager instance.
     local DB = DatabaseManager.new()
 ```
 
-Once the manager instance has been created. You may use it like so:
-
-**Using The Query Builder**
-
-
 #Introduction
 
 The database query builder provides a convenient, fluent interface to creating and running database queries. It can be used to perform most database operations in your application.
-
-#Retrieving Results
 
 Retrieving All Rows From A Table
 
@@ -192,7 +185,7 @@ Exists Statements
 DB:table('users')
             :whereExists(function(query)
             {
-                return query:select(DB::raw(1))
+                return query:select(DB:raw(1))
                       :from('orders')
                       :whereRaw('orders.user_id = users.id');
             })
@@ -274,7 +267,7 @@ Updating Records In A Table
 ```lua
 DB:table('users')
             :where('id', 1)
-            :update({votes => 1})
+            :update({votes = 1})
 ```
 
 Incrementing or decrementing a value of a column
@@ -292,7 +285,7 @@ DB:table('users'):decrement('votes', 5);
 You may also specify additional columns to update:
 
 ```lua
-DB:table('users'):increment('votes', 1, {name => 'John'});
+DB:table('users'):increment('votes', 1, {name = 'John'});
 ```
 
 Deletes
