@@ -7,7 +7,7 @@ The lua Database component is a full database toolkit for lua, providing an expr
 First, create a new Database manager instance.
 
 ```lua
-    local DB = DatabaseManager.new()
+local DB = DatabaseManager.new()
 ```
 
 #Introduction
@@ -19,7 +19,7 @@ Retrieving All Rows From A Table
 To begin a fluent query, use the table method on the DB facade. The table method returns a fluent query builder instance for the given table, allowing you to chain more constraints onto the query and then finally get the results. In this example, let's just get all records from a table:
 
 ```lua
-    local  users = DB:table('users')->get();
+local  users = DB:table('users')->get();
 ```
 Retrieving A Single Row / Column From A Table
 
