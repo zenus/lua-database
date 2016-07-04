@@ -167,7 +167,7 @@ Sometimes you may need to create more advanced where clauses such as "where exis
 ```lua
 DB:table('users')
             :where('name', '=', 'John')
-            :orWhere(function($query)
+            :orWhere(function(query)
             {
                return query:where('votes', '>', 100)
                       :where('title', '<>', 'Admin');
